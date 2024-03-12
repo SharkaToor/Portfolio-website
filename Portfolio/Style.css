@@ -1,3 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .sidebar{
-    background-color: antiquewhite;
+    background-color: rgba(216, 213, 213, 0.747);
+    width: 434px;
+    height: 100vh;
+    /* font-family: "Source Code Pro", monospace; */
+
+}
+
+.sidebar nav{
+    padding:70px
+}
+.main{
+    /* background-color: brown; */
+    width: 90vw;
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 20px;
+}
+
+.sidebar li a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    display: flex;
+}
+.infocontainer{
+    /* background-color: rgb(4, 0, 255); */
+    /* padding-bottom: 20px; */
+    height: 58vh;
+    width: 80vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.Devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* font-family: "Source Code Pro", monospace; */
+
+}
+ .Devpic img
+ {
+    height: 58vh;
+    width: auto;
+    /* margin: 20px; */
+}
+.hello{
+    font-size: 30px;
+}
+.name{
+    font-size: 65px;
+    font-weight: bold;
+}
+.about{
+    font-size: 30px;
+}
+.moreabout{
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.buttons{
+    margin-top: 32px;
+}
+.buttons button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(4, 0, 255, 0.534);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+    margin: 0 4px;
+    font-weight: bold;
+}
+
+.buttons button:hover{
+    background-color:white;
+    color:  rgba(4, 0, 255, 0.459);
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300;1,400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap') */
+
+.contactform{
+    padding-top: 144px ;
+    padding: 0 34px;
+}
+
+.contactform h1{
+    text-align: center;
+}
+.contactform form div {
+    padding: 10px 0 ;
 }

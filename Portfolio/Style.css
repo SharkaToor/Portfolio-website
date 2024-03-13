@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.sidebar{
+.sidebar {
     background-color: rgba(216, 213, 213, 0.747);
     width: 434px;
     height: 100vh;
@@ -11,28 +11,30 @@
 
 }
 
-.sidebar nav{
-    padding:70px
+.sidebar nav {
+    padding: 70px
 }
-.main{
+
+.main {
     /* background-color: brown; */
     width: 90vw;
 }
 
-.sidebar li{
+.sidebar li {
     list-style-type: none;
     padding: 20px;
 }
 
-.sidebar li a{
+.sidebar li a {
     text-decoration: none;
     color: black;
 }
 
-.container{
+.container {
     display: flex;
 }
-.infocontainer{
+
+.infocontainer {
     /* background-color: rgb(4, 0, 255); */
     /* padding-bottom: 20px; */
     height: 58vh;
@@ -41,38 +43,44 @@
     display: flex;
     justify-content: space-around;
 }
-.Devinfo{
+
+.Devinfo {
     display: flex;
     justify-content: center;
     flex-direction: column;
     /* font-family: "Source Code Pro", monospace; */
 
 }
- .Devpic img
- {
+
+.Devpic img {
     height: 58vh;
     width: auto;
     /* margin: 20px; */
 }
-.hello{
+
+.hello {
     font-size: 30px;
 }
-.name{
+
+.name {
     font-size: 65px;
     font-weight: bold;
 }
-.about{
+
+.about {
     font-size: 30px;
 }
-.moreabout{
+
+.moreabout {
     font-size: 22px;
     margin-top: 20px;
 }
 
-.buttons{
+.buttons {
     margin-top: 32px;
 }
-.buttons button{
+
+.buttons button {
     padding: 10px 20px;
     border-radius: 30px;
     background-color: rgba(4, 0, 255, 0.534);
@@ -82,23 +90,95 @@
     border: none;
     margin: 0 4px;
     font-weight: bold;
+    margin: 15px;
 }
 
-.buttons button:hover{
-    background-color:white;
-    color:  rgba(4, 0, 255, 0.459);
+.buttons button:hover {
+    background-color: white;
+    color: rgba(4, 0, 255, 0.459);
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300;1,400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap') */
 
-.contactform{
-    padding-top: 144px ;
-    padding: 0 34px;
+
+
+
+
+/* **************************Contact me page styling ************************** */
+.contactform {
+    background-color: rgba(41, 240, 240, 0.26);
+    /* padding-top: 144px ; */
+    padding: 0 50px;
+    height: 100vh;
 }
 
-.contactform h1{
-    text-align: center;
+.contactform h1 {
+    padding-top: 130px;
+    /* text-align: center; */
+    
 }
+
 .contactform form div {
-    padding: 10px 0 ;
+    font-size: 20px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+#emailHelp{
+    font-size: 8px;
+    color: midnightblue;
+    margin: 0 10px;
+    padding: 3px 0 0 0;
+}
+.contactform form div input{
+    width: 26vw;
+    border-radius: 8px;
+    padding: 3px;
+    margin: 6px 0 0 0;
+    border-color: rgba(0, 0, 255, 0.39);
+}
+/* .contactform form div input:hover{
+    background-color: rgba(4, 0, 255, 0.575);
+    color: white;
+} */
+#form-check{
+    flex-direction: row;
+
+}
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+.btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(4, 0, 255, 0.575);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    margin: 15px;
+    font-weight: bold;
+    /* padding: 20px; */
+}
+.btn:hover{
+        background-color: white;
+        color: rgba(4, 0, 255, 0.534);
+        /* border: 50px black; */
+}
+
+/* ***************************blog stylings ***************************** */
+
+.blogItem{
+    padding: 20px;
+
+}
+ h1{
+    font-size: 30px;
+    font-weight: bold;   
+    padding: 20PX; 
+}
+.blogItem p{
+
 }

@@ -5,14 +5,14 @@
 
 .sidebar {
     background-color: rgba(216, 213, 213, 0.747);
-    width: 434px;
+    width: 250px;
     height: 100vh;
     /* font-family: "Source Code Pro", monospace; */
-
+    transition: transform 0.3s ease-in;
 }
 
 .sidebar nav {
-    padding: 70px
+    padding: 60px
 }
 
 .main {
@@ -22,7 +22,10 @@
 
 .sidebar li {
     list-style-type: none;
-    padding: 20px;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    /* margin: 5px; */
 }
 
 .sidebar li a {
@@ -106,7 +109,7 @@
 
 /* **************************Contact me page styling ************************** */
 .contactform {
-    background-color: rgba(41, 240, 240, 0.26);
+    /* background-color: rgba(41, 240, 240, 0.26); */
     /* padding-top: 144px ; */
     padding: 0 50px;
     height: 100vh;
@@ -115,7 +118,7 @@
 .contactform h1 {
     padding-top: 130px;
     /* text-align: center; */
-    
+
 }
 
 .contactform form div {
@@ -125,31 +128,36 @@
     flex-direction: column;
 
 }
-#emailHelp{
+
+#emailHelp {
     font-size: 8px;
     color: midnightblue;
     margin: 0 10px;
     padding: 3px 0 0 0;
 }
-.contactform form div input{
+
+.contactform form div input {
     width: 26vw;
     border-radius: 8px;
     padding: 3px;
     margin: 6px 0 0 0;
     border-color: rgba(0, 0, 255, 0.39);
 }
+
 /* .contactform form div input:hover{
     background-color: rgba(4, 0, 255, 0.575);
     color: white;
 } */
-#form-check{
+#form-check {
     flex-direction: row;
 
 }
-#form-check input{
+
+#form-check input {
     width: 24px;
     margin: 3px 0;
 }
+
 .btn {
     padding: 10px 20px;
     border-radius: 30px;
@@ -162,23 +170,116 @@
     font-weight: bold;
     /* padding: 20px; */
 }
-.btn:hover{
-        background-color: white;
-        color: rgba(4, 0, 255, 0.534);
-        /* border: 50px black; */
+
+.btn:hover {
+    background-color: white;
+    color: rgba(4, 0, 255, 0.534);
+    /* border: 50px black; */
 }
 
 /* ***************************blog stylings ***************************** */
 
-.blogItem{
+.blogItem {
     padding: 20px;
 
 }
- h1{
+
+h1 {
     font-size: 30px;
-    font-weight: bold;   
-    padding: 20PX; 
+    font-weight: bold;
+    padding: 20PX;
 }
-.blogItem p{
+
+/* .blogItem p{
+
+} */
+
+.intro h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20PX;
+}
+
+.intro p {
+    font-size: 20px;
+    /* font-weight: bold;    */
+    padding: 20PX;
+}
+
+.skillcontainer {
+    padding: 12px;
+}
+
+.skill {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px; */
+    height: 8px;
+    width: 265px;
+    background-color: red;
+    /* border: 2px solid rgba(9, 143, 233, 0.616); */
+}
+
+.skillItem {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+}
+
+.hundred {
+    width: 270px;
+    background-color: aqua;
+}
+
+.fifty {
+    width: 150px;
+    background-color: blueviolet;
+}
+
+.t5 {
+    width: 100px;
+    background-color: gold;
+}
+
+.skillItem h3 {
+    font-size: 15px;
+    /* font-weight: bold; */
+    padding: 8PX;
+}
+
+.sidebarGo {
+    /* position: absolute; */
+    transform: translate(-443px 0);
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    margin-top: 8px;
+}
+
+.close {
+    margin-left: 170px;
+    margin-top: 8px;
+
+}
+
+@media (max-width: 1200px) {
+    /* *{
+    background-color: rgba(209, 140, 140, 0.801);
+    } */
+    /* .sidebar{
+        position: absolute;
+        transform: translate(-443px 0);
+    } */
+    /* .Devpic{
+        display: none;
+    }
+} */
+
+@media (max-width: 1200px) {
 
 }

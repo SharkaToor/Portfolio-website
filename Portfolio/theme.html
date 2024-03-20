@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharka Toor, Web Developer, Programmer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            background-color: #f2f2f2;
+            width: 250px;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+            overflow-y: auto;
+        }
+
+        .main {
+            flex: 1;
+            padding: 20px;
+            transition: margin-left 0.3s ease-in-out;
+        }
+
+        .sidebar nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar nav ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        .toggle-label {
+            display: block;
+            width: 60px;
+            height: 34px;
+            background-color: #ccc;
+            border-radius: 17px;
+            position: relative;
+        }
+
+        .toggle-label::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 28px;
+            height: 28px;
+            background-color: #fff;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        #theme-switch:checked + .toggle-label {
+            background-color: #333;
+        }
+
+        #theme-switch:checked + .toggle-label::before {
+            transform: translateX(26px);
+        }
+
+        .hamburger-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        .close-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-switch" style="display: none;">
+    <label for="theme-switch" class="toggle-label"></label>
+
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-switch">
+                <label for="theme-switch" class="toggle-label"></label>
+            </div>
+            <h1>Main Content</h1>
+            <p>This is the main content area.</p>
+        </div>
+    </div>
+
+    <!-- Hamburger Button -->
+    <div class="hamburger-btn" onclick="toggleSidebar()">
+        &#9776;
+    </div>
+
+    <!-- Close Button -->
+    <div class="close-btn" onclick="toggleSidebar()">
+        &times;
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const closeBtn = document.querySelector('.close-btn');
+
+            if (sidebar.style.transform === 'translateX(0px)') {
+                sidebar.style.transform = 'translateX(-250px)';
+                closeBtn.style.display = 'none';
+            } else {
+                sidebar.style.transform = 'translateX(0px)';
+                closeBtn.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

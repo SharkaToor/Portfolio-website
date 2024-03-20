@@ -6,6 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sharka Toor, Web Developer, Programmer</title>
     <link rel="stylesheet" href="./Style.css">
+    <style>
+        body {
+        transition: background-color 0.3s ease;
+        /* Default light theme */
+        background-color: #fff;
+        color: #333;
+    }
+
+    /* Dark theme styles */
+    body.dark-theme {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .theme-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    .toggle-label {
+        display: block;
+        width: 60px;
+        height: 34px;
+        background-color: #ccc;
+        border-radius: 17px;
+        position: relative;
+    }
+
+    .toggle-label::before {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 28px;
+        height: 28px;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+    }
+
+    #theme-switch:checked+.toggle-label {
+        background-color: #333;
+    }
+
+    #theme-switch:checked+.toggle-label::before {
+        transform: translateX(26px);
+    }
+    </style>
 </head>
 
 <body>
@@ -23,6 +72,17 @@
             </nav>
         </div>
         <div class="main">
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-switch">
+                <label for="theme-switch" class="toggle-label"></label>
+            </div>
+            <script>
+                const themeSwitch = document.getElementById('theme-switch');
+        
+                themeSwitch.addEventListener('change', function () {
+                    document.body.classList.toggle('dark-theme');
+                });
+            </script>
             
             <div class="contactform">
                 <form>
